@@ -15,9 +15,9 @@ class Stoc:
         self.um = um
         self.pret = pret            #R.8.parametru pret - default 5, cu acesta se face media pentru pretul de iesire
         self.i = {}					# fiecare instanta va avea trei dictionare intrari, iesiri, data
-        self.i_p = {}					#R.8. dicttionar pret intrare
+        self.i_p = {}					#R.8. dictionar pret intrare
         self.e = {}					# pentru mentinerea corelatiilor cheia operatiunii va fi unica
-        self.e_p = {}					#R.8 dicttionar pret iesire
+        self.e_p = {}					#R.8 dictionar pret iesire
         self.d = {}
         self.limita_stoc = limita_stoc
 
@@ -116,9 +116,9 @@ class Stoc:
         
         self.mesaj = mesaj
         
-        to = 'priectescoala@gmail.com'  #Adresa destinatar. Poate fi modificata
-        gmail_user = 'priectescoala@gmail.com'
-        gmail_pwd = 'Proiect.Scoala1'
+        to = '***'  #Adresa destinatar
+        gmail_user = '***' #Adresa utilizator
+        gmail_pwd = '***' #Parola mail
         smtpserver = smtplib.SMTP("smtp.gmail.com",587)
         smtpserver.ehlo()
         smtpserver.starttls()
@@ -240,8 +240,8 @@ class Stoc:
         
         db.close()
         
-
-fragute = Stoc('fragute', 'fructe', 'kg', limita_stoc = 30)       # cream instantele clasei
+# Sunt create instantele clasei
+fragute = Stoc('fragute', 'fructe', 'kg', limita_stoc = 30)       
 lapte = Stoc('lapte', 'lactate', 'litru', limita_stoc = 24, pret=2)
 ceasuri = Stoc('ceasuri', 'ceasuri', limita_stoc = 10)
 
